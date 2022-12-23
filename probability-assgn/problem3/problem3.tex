@@ -1,0 +1,51 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}{}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\usepackage{listings}
+\usepackage{watermark}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\let\vec\mathbf
+
+\titlespacing{\subsection}{0pt}{\parskip}{-3pt}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+\titlespacing{\paragraph}{0pt}{\parskip}{\parskip}
+\newcommand{\figuremacro}[5]{
+    
+}
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.08]{logo.jpg}} }
+
+\sloppy
+\title{\mytitle}
+\title{
+Probability Assignment
+}
+\author{T.Sai Raghavendra(FWC22087)}
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+\section{\textbf{Problem3}}
+\subsection{\textbf{Question}}
+Let X represent the difference between the number of heads and the number of tails obtained when a coin is tossed 6 times. What are possible values of X?\\
+\subsection{\textbf{Solution}}
+A coin is tossed 6 times and X represents the difference between the number of heads and the number of tails.\\
+\begin{center}
+X(6H,0T) = $|6-0|$ = 6\\
+X(5H,1T) = $|5-1|$ = 4\\
+X(4H,2T) = $|4-2|$ = 2\\
+X(3H,3T) = $|3-3|$ = 0\\
+X(2H,4T) = $|2-4|$ = 2\\
+X(1H,5T) = $|1-5|$ = 4\\
+X(0H,6T) = $|0-6|$ = 6\\
+\end{center}
+Thus, the possible values of X are 0,2,4 and 6.
+\end{document}
