@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{enumitem}
+\usepackage{hyperref,xcolor}
+\hypersetup{
+    colorlinks,
+    urlcolor={black}	%black!50!blue
+}
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+\let\vec\mathbf
+
+\def\inputGnumericTable{}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ifthen}
+
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\newcommand{\Problem}{\noindent \textbf{Problem: }}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\setlist[enumerate]{font=\small\bfseries}
+\renewcommand\thefootnote{\textcolor{black}{\arabic{footnote}}}
+
+
+\begin{document}
+
+
+\title{Assignment: Probability}
+\author{\Large T.Sai Raghavendra - FWC22087}
+\date{}
+
+
+\maketitle
+\begin{enumerate}[label=13.\arabic{enumi}.\arabic{enumii}]%,ref=\thesection.\theenumi.\theenumi]
+\numberwithin{equation}{enumi}
+%%%13.1.17
+\setcounter{enumi}{0}
+\setcounter{enumii}{17}
+
+
+\item \footnote{Read question numbers as (CHAPTER NUMBER).(EXERCISE NUMBER).(QUESTION NUMBER)}If A and B are events such that $\pr{A|B} = \pr{B|A}$, then\\
+\begin{enumerate}
+\item $A \subset B \text{ but } A \not= B$
+\item $A = B$
+\item $A \cap B = \phi$
+\item $\pr{A}=\pr{B}$
+\end{enumerate}
+
+\solution \begin{align}
+\text{Given}, \pr{A|B} &= \pr{B|A}\\
+\implies  \frac{\pr{AB}}{\pr{B}} &= \frac{\pr{BA}}{\pr{A}}\\ 
+\implies  \frac{\pr{AB}}{\pr{B}} &= \frac{\pr{AB}}{\pr{A}} (\text{Since}, \pr{AB} = \pr{BA})\\
+\implies  \frac{1}{\pr{B}} &= \frac{1}{\pr{A}}\\
+\therefore  \pr{A} &= \pr{B}
+\end{align}
+\end{enumerate}
+\end{document}
